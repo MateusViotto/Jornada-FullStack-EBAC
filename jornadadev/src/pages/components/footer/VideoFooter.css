@@ -16,13 +16,12 @@
   display: flex; /*Coloca os componentes um ao lado do outro*/
 }
 
-.videoFooterMusic__text{
-    width: 80%;
-    overflow-x: hidden; /*Quando está fora da div não aparece*/
-
+.videoFooterMusic__text {
+  width: 80%;
+  overflow-x: hidden; /*Quando está fora da div não aparece*/
 }
-.videoFooterMusic__text p{
-    animation: moveTheText 3s infinite linear;
+.videoFooterMusic__text p {
+  animation: moveTheText 3s infinite linear;
 }
 .videoFooter__record {
   animation: spinTheRecord 3s infinite linear; /*Atribui a animação*/
@@ -43,12 +42,11 @@
   }
 }
 
-  @keyframes moveTheText {
-    0%{
-      transform: translate(100%);
-    }
-    100%{
-      transform: translate(-100%);
-    }
+@keyframes moveTheText {
+  0% {
+    transform: translate(100%);
   }
-
+  100% {
+    transform: translate(-100%);
+  }
+}

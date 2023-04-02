@@ -1,0 +1,54 @@
+.videoFooter {
+  position: relative;
+  bottom: 20%;
+  color: white;
+  margin-left: 30px;
+}
+
+.videoFooter__text h3 {
+  padding-bottom: 20px;
+}
+.videoFooter__text p {
+  padding-bottom: 20px;
+}
+
+.videoFooter__music {
+  display: flex; /*Coloca os componentes um ao lado do outro*/
+}
+
+.videoFooterMusic__text{
+    width: 80%;
+    overflow-x: hidden; /*Quando está fora da div não aparece*/
+
+}
+.videoFooterMusic__text p{
+    animation: moveTheText 3s infinite linear;
+}
+.videoFooter__record {
+  animation: spinTheRecord 3s infinite linear; /*Atribui a animação*/
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  height: 50px;
+  filter: invert(1); /*Inverte a cor da imagem*/
+}
+
+@keyframes spinTheRecord {
+  /*Animação do disco*/
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /*Rotaciona a imagem*/
+  }
+}
+
+  @keyframes moveTheText {
+    0%{
+      transform: translate(100%);
+    }
+    100%{
+      transform: translate(-100%);
+    }
+  }
+

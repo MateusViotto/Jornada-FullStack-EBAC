@@ -3,6 +3,7 @@ import React, {
   useState,
 } from "react"; /*É possível utilizar a função rcfe para criar o componente automaticamente*/
 import "./video.css";
+import VideoFooter from "./components/footer/VideoFooter";
 
 function Video() {
   const videoRef = useRef(null);
@@ -28,6 +29,8 @@ function Video() {
         /*controls    Adiciona o player do vídeo*/
         src="https://firebasestorage.googleapis.com/v0/b/jornada-dev.appspot.com/o/brecker2.mp4?alt=media&token=d1a44acd-bef3-4b18-bafe-92fa0b26828a" /*Adicionar endereço do vídeo*/
       ></video>
+      {/*Side bar */}
+      <VideoFooter />
     </div>
   );
 }
